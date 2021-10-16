@@ -2,14 +2,28 @@
 <!--Main landing page-->
 <html>
     <head>
-        <title>FishType</title>
+        <title>fishtype</title>
+        <link rel = "stylesheet" href = "/index.css">
     </head>
-    <body>
-        <input id="keystroke_input"></textarea>
-        <p id="trial_label">Current Trial: 0</p>
-        <button id = "button_reset">Reset</button>
-        <button id = "button_finish">Finish Trial</button>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+    </style>
+
+    <body>
+        <div class = "main">
+            <h1>fishtype</h1>
+            <div class = "desc">
+                <h2>Please type "the quick brown fox jumped over the lazy dog" into the box without errors and hit finish trial. If you make an error, you will be prompted to restart the trial. We humbly ask you do this five times.</h2>
+            </div>
+            <input type = "text" placeholder = "fishtype me kudasai!!!" id = "input">
+            <p class = "progress">Trials Completed: </p>
+        </div>
+
+        <div class = "btns">
+            <button id = "btn">click me kudasai!!!</button>
+            <button id = "btn">oreimo kudasai!!!</button>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
