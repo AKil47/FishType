@@ -78,7 +78,7 @@ h1 {
     margin-top: 15%;
 }
 
-#btn {
+.btn {
     background-color: var(--dim-color);
     border-color: var(--dim-color);
     text-decoration: none;
@@ -92,13 +92,13 @@ h1 {
     -webkit-transition: .1s;
 }
 
-#btn:hover {
+.btn:hover {
     border-color: var(--highlight);
     box-shadow: 0 0 1em 0 var(--highlight);
     -webkit-transition: .15s;
 }
 
-#btn:active {
+.btn:active {
     background-color: var(--bg-color);
     -webkit-transition: .25s;
 }
