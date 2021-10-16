@@ -66,7 +66,7 @@ let finishTrial = function() {
 }
 
 let userFail = function() {
-    alert("NO")
+    alert("Error, please try again.")
     resetTrial()
 }
 
