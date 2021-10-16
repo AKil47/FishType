@@ -4,9 +4,9 @@ console.log("hi")
 INPUT_STR = "The quick brown fox jumped over the lazy dog"
 
 //Connect elements to JS
-keystrokeInput = document.getElementById("keystroke_input")
+keystrokeInput = document.getElementById("input")
 buttonFinish = document.getElementById("button_finish")
-trialLabel = document.getElementById("trial_label")
+trialLabel = document.getElementById("progress")
 buttonReset = document.getElementById("button_reset")
 
 
