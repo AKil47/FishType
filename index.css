@@ -12,18 +12,30 @@ html {
     background-color: var(--bg-color);
 }
 
-section {
+.main {
     margin-top: 10%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    cursor: default;
 }
 
 h1 {
     color: var(--highlight);
     font-family: var(--plex);
-    text-align: center;
     font-size: 4em;
 }
 
-input[type = text] {
+.desc {
+    color: var(--text-color);
+    font-family: var(--plex);
+    font-size: .8em;
+    text-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#input {
     background-color: var(--dim-color);
     width: 100%;
     border: 2px solid var(--dim-color);
@@ -38,14 +50,55 @@ input[type = text] {
     margin: 0 auto;
     font-size: 1.5rem;
     color: var(--text-color);
-    text-wrap: wrap;
 }
 
-input[type = text]:focus {
+#input:focus {
     border-color: var(--highlight);
     box-shadow: 0.1em .1em 0 0.1em var(--highlight);
 }
 
+.progress {
+    font-family: var(--plex);
+    background-color: var(--dim-color);
+    color: var(--text-color);
+    width: 10em;
+    margin: 1em auto;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: default;
+}
+
 ::placeholder {
     opacity: 0.015;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+#btn {
+    background-color: var(--dim-color);
+    border-color: var(--dim-color);
+    text-decoration: none;
+    border: none;
+    padding: 1em;
+    margin: 0 1%;
+    border-radius: .5em;
+    color: var(--highlight);
+    font-family: var(--plex);
+    cursor: pointer;
+    -webkit-transition: .1s;
+}
+
+#btn:hover {
+    border-color: var(--highlight);
+    box-shadow: 0 0 1em 0 var(--highlight);
+    -webkit-transition: .15s;
+}
+
+#btn:active {
+    background-color: var(--bg-color);
+    -webkit-transition: .25s;
 }
