@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig)
 
 //CONSTS
 const INPUT_STR = "The quick brown fox jumped over the lazy dog"
-const TRIAL_COUNT = 7
+const TRIAL_COUNT = 5
 
 //Connect elements to JS
 const keystrokeInput = document.getElementById("input")
@@ -26,7 +26,7 @@ const buttonReset = document.getElementById("button_reset")
 
 
 
-let currentTrial = 0
+let currentTrial = 1
 
 let saved_data  = []
 let new_data = []
