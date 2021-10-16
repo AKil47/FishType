@@ -109,7 +109,7 @@ let finishSurvey = function() {
     const storage = getStorage();
     const storageRef = ref(storage, create_UUID());
 
-    uploadBytes(storageRef, blob).then((snapshot) => {
+    await uploadBytes(storageRef, blob).then((snapshot) => {
         console.log('Uploaded a blob or file!');
     });
 
