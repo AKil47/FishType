@@ -1,13 +1,27 @@
 console.log("hi")
+import { getStorage, ref, uploadBytes } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
+
+import * as firebase from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"
+// Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyDRIE-PU1zxFCGxdNJ6yQ_CgAge2e0CSlQ",
+    authDomain: "fishtype-3f3cb.firebaseapp.com",
+    projectId: "fishtype-3f3cb",
+    storageBucket: "fishtype-3f3cb.appspot.com",
+    messagingSenderId: "13886084546",
+    appId: "1:13886084546:web:54f372329cd56d7887725b"
+  };
+firebase.initializeApp(firebaseConfig)
+
 
 //CONSTS
-INPUT_STR = "The quick brown fox jumped over the lazy dog"
+const INPUT_STR = "The quick brown fox jumped over the lazy dog"
 
 //Connect elements to JS
-keystrokeInput = document.getElementById("input")
-buttonFinish = document.getElementById("button_finish")
-trialLabel = document.getElementById("progress")
-buttonReset = document.getElementById("button_reset")
+const keystrokeInput = document.getElementById("input")
+const buttonFinish = document.getElementById("button_finish")
+const trialLabel = document.getElementById("progress")
+const buttonReset = document.getElementById("button_reset")
 
 
 
@@ -37,13 +51,13 @@ let finishTrial = function() {
     if (keystrokeInput.value  == INPUT_STR) {
         saved_data = saved_data.concat(new_data)
 
-        if (currentTrial == 7) {
+        if (currentTrial == 1) {
             finishSurvey()
         }
         else {
             incrementTrial()
-            resetTrial()
         }
+        resetTrial()
 
     } else {
         userFail()
@@ -82,7 +96,22 @@ let finishSurvey = function() {
     console.log(saved_data)
 
     var blob = new Blob([JSON.stringify(saved_data)], {type: "application/json"})
+
+    // var storageRef = firebase.storage().ref();
+
+    // var fileRef = storageRef.child("/files/my-file.json")
+    // fileRef.put(blob).then(function(snapshot) {
+    //     console.log('Uploaded a blob!');
+    // });
+
+    const storage = getStorage();
+    const storageRef = ref(storage, create_UUID());
+
+    uploadBytes(storageRef, blob).then((snapshot) => {
+        console.log('Uploaded a blob or file!');
+    });
 }
+
 
 
 //Bridge front end and backend
