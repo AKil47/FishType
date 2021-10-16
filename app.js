@@ -16,6 +16,7 @@ firebase.initializeApp(firebaseConfig)
 
 //CONSTS
 const INPUT_STR = "The quick brown fox jumped over the lazy dog"
+const TRIAL_COUNT = 7
 
 //Connect elements to JS
 const keystrokeInput = document.getElementById("input")
@@ -52,7 +53,7 @@ let finishTrial = function() {
     if (keystrokeInput.value  == INPUT_STR) {
         saved_data = saved_data.concat(new_data)
 
-        if (currentTrial == 1) {
+        if (currentTrial == TRIAL_COUNT) {
             finishSurvey()
         }
         else {
