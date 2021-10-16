@@ -40,9 +40,10 @@ let keyRelease = function(e) {
 let keyPress = function(e) {
     if (e.keyCode == 8) {
         userFail()
+    } else {
+        let date = Date.now()
+        new_data.push(["PRESS", currentTrial, e.keyCode, date])
     }
-    let date = Date.now()
-    new_data.push(["PRESS", currentTrial, e.keyCode, date])
 }
 
 
