@@ -111,6 +111,8 @@ let finishSurvey = function() {
     uploadBytes(storageRef, blob).then((snapshot) => {
         console.log('Uploaded a blob or file!');
     });
+
+    window.location.href += "redirect";
 }
 
 
