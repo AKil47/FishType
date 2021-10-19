@@ -94,7 +94,7 @@ function create_UUID(){
 }
 
 // We done... let's upload
-let finishSurvey = function() {
+let finishSurvey = async function() {
     console.log(saved_data)
 
     var blob = new Blob([JSON.stringify(saved_data)], {type: "application/json"})
