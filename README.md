@@ -15,4 +15,4 @@ The `analysis` directory contains the Google Colab file along with our official 
 Colab Notebook for Data Analysis: https://colab.research.google.com/drive/1gypNJ5vnazcBVmV-uc6SD3tj2WjU2otD?usp=sharing
 
 # Access the Dataset
-While we have plans to upload the dataset to Kaggle or make a link available on our site, we have not done so yet. If you are a research and are interested in using our data, please contact Akilan Manivannan (amanivannan@tamu.edu) or Nicholas Kasman (nck493@tamu.edu).
+While we have plans to upload the dataset to Kaggle or make a link available on our site, we have not done so yet. If you are a researcher and are interested in using our data, please contact Akilan Manivannan (amanivannan@tamu.edu) or Nicholas Kasman (nck493@tamu.edu).
