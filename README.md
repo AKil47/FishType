@@ -1,7 +1,7 @@
 # FishType
 **TAMU Datathon First Place Winner!** 🎉🎉🎉
 
-Created by Akilan Manivannan and Nicholas Kasman at Texas A&M University. 
+Created by Akilan Manivannan, Nicholas Kasman, and Zeeshawn Chathur at Texas A&M University.
 
 FishType is a project that can capture and analyze inherent patterns from the way that people type. Formally known as Keystroke Dynamics, our research aims to take the same principles of gait analysis and apply them to typing. Our project captures the specific timing data from each keystroke that you type and uses that to determine your identity. We hope that this can be used as another form of authentication to reinforce existing security systems.
 
